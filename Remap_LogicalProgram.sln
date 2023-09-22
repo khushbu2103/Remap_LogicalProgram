@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remap_LogicalProgram", "Remap_LogicalProgram\Remap_LogicalProgram.csproj", "{8969F875-D5DD-4DEB-ACE1-147261A0969E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8969F875-D5DD-4DEB-ACE1-147261A0969E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8969F875-D5DD-4DEB-ACE1-147261A0969E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8969F875-D5DD-4DEB-ACE1-147261A0969E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8969F875-D5DD-4DEB-ACE1-147261A0969E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B37A5AFA-FCB8-4D8A-B6FC-01111E7E3D20}
+	EndGlobalSection
+EndGlobal
