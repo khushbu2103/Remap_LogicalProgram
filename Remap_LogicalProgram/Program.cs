@@ -31,7 +31,10 @@ namespace Remap_LogicalProgram
                 "12. Print 1 to 100 Without Using Loop\n" +
                 "13. Root of quadratic equation\n" +
                 "14. Number's factor on string output\n" +
-                "15. Letter Presenr Or Absent");
+                "15. Letter Presenr Or Absent\n" +
+                "16.\n" +
+                "17.\n" +
+                "18. Fi9rst repeated element of array");
             int option = Convert.ToInt32(Console.ReadLine());
             
             
@@ -218,6 +221,33 @@ namespace Remap_LogicalProgram
                         Console.WriteLine("\nWould you like to continue(1) or exit the program(0)");
                         int desicion14 = Convert.ToInt32(Console.ReadLine());
                         if (desicion14 == 0)
+                        {
+                            execute = false;
+                        }
+                        break;
+                    case 16:
+                        LogicalPrograms.PrimeNumberByArray();
+                        Console.WriteLine("\n\nWould you like to continue(1) or exit the program(0)");
+                        int desicion15 = Convert.ToInt32(Console.ReadLine());
+                        if (desicion15 == 0)
+                        {
+                            execute = false;
+                        }
+                        break;
+                    case 17:
+                        LogicalPrograms.ShiftAllZeroInArray();
+                        Console.WriteLine("\n\nWould you like to continue(1) or exit the program(0)");
+                        int desicion16 = Convert.ToInt32(Console.ReadLine());
+                        if (desicion16 == 0)
+                        {
+                            execute = false;
+                        }
+                        break;
+                    case 18:
+                        LogicalPrograms.FirstRepeatedElementOfArray();
+                        Console.WriteLine("\n\nWould you like to continue(1) or exit the program(0)");
+                        int desicion17 = Convert.ToInt32(Console.ReadLine());
+                        if (desicion17 == 0)
                         {
                             execute = false;
                         }

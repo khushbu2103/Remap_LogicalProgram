@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -178,6 +179,11 @@ namespace Remap_LogicalProgram
                 return;
             }
         }
+        //public static void GetNextDay_1(int d, int m, int y)
+        //{
+        //    int[] daysOfAMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
+        //}
         public static void TimeElapseCalulation()
         {
             Console.WriteLine("please enter any key to start stopwatch");
@@ -318,6 +324,127 @@ namespace Remap_LogicalProgram
 
             else
                 Console.WriteLine("None present");
+        }
+        public static void PrimeNumberByArray()
+        {
+            Console.Write("Enter the number of elements in the array: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            Console.WriteLine("Enter the elements of the array:");
+
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+
+            //Console.WriteLine("Prime numbers in the array:\n");
+
+            for (int i = 0; i < n; i++)
+            {
+                if (IsPrime(arr[i]))
+                {
+                    Console.Write("Prime numbers in the array: " + arr[i] + " ");
+                }
+            }
+        }
+
+        static bool IsPrime(int number)
+        {
+            if (number < 2)
+            {
+                return false;
+            }
+
+            for (int i = 2; i <= Math.Sqrt(number); i++)  
+            {
+                if (number % i == 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+            //  int[] arr = new int[5]; // 2,4,5,6,7
+
+            //  int factorCount = 0;
+            //  for (int i = 0; i < arr.Length; i++)
+            //  {
+
+            //      if (a  == 0)
+            //      {
+            //          factorCount++;
+            //      }
+
+            //  }
+            //if(factorCount == 2)
+            //  {
+            //      Console.WriteLine("{0} is prime number", arr[num]);
+            //  }
+
+
+        }
+        public static void ShiftAllZeroInArray()
+        {
+            Console.Write("Enter the number of elements in the array: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            Console.WriteLine("Enter the elements of the array:");
+
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+            //int[] newArr = new int[n]; //0000000
+
+            //int j = 0;
+            int countOfNonZerosElement = 0;
+            for(int i = 0; i < n; i++)
+            {
+                if (arr[i] != 0)
+                {
+                    Console.Write(arr[i] + " ");
+                    countOfNonZerosElement++;
+                    //newArr[j] = arr[i]; //14004002
+                    //j = j + 1;
+                }
+            }
+            for(int j =0; j < n-countOfNonZerosElement; j++)
+            {
+                Console.Write("0 ");
+            }
+           //for(int i = 0; i < n;i++)
+           // {
+           //     Console.WriteLine(newArr[i]);
+           // }
+        }
+        public static void FirstRepeatedElementOfArray()
+        {
+            int[] arr = ReadUserInputForArray();
+            int n = arr.Length;
+            for(int i =0; i < n; i++)
+            {
+                for(int j = i+1; j<n; j++)
+                {
+                    if (arr[j] == arr[i])
+                    {
+                        Console.Write("\nFirst repeated number is: " + arr[i]);
+                        return;
+                    }
+                }
+            }
+        }
+        public static int[] ReadUserInputForArray()
+        {
+            Console.Write("Enter the number of elements in the array: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            Console.WriteLine("Enter the elements of the array:");
+
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+            return arr;
         }
     }
 }
